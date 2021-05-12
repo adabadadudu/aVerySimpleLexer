@@ -13,8 +13,9 @@
 #define _C 6
 #define _D 7
 #define WHITE_SPACE 8
+#define EQ 9
 
-auto char tokens[9] = {'+','-','/','*','A','B','C','D',' '};
+auto char tokens[10] = {'+','-','/','*','A','B','C','D',' ','='};
 
 struct Token {
 	int tok_type;
@@ -52,6 +53,8 @@ int main(){
 				token->tok_type = _C;
 			else if(tok[i] == tokens[_D])
 				token->tok_type = _D;
+			else if(tok[i] == tokens[EQ])
+				token->tok_type = EQ;
 			else if(tok[i] == tokens[WHITE_SPACE])
 				continue;
 			else {
