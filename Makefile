@@ -12,8 +12,9 @@ all:
     ./$(PROGRAM)
   endif
   
-defualt: all
-  echo "created"
-  
-run:
-  ifeq
+runWin:
+  $(PROGRAM).exe
+
+runU:
+  # run Unix
+  ./$(PROGRAM)
