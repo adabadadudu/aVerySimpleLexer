@@ -61,13 +61,8 @@ int main(){
 				char str[] = "unsupported character %c";
 				sprintf(str, tok[i]);
 				perror(str);
-			}
-			
+			}	
 		}
-		// syntax
-
-		// semantic
-
 
 		tok = strtok(NULL,"\n");
 	}
