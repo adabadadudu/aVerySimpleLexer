@@ -7,4 +7,5 @@ Lexer tokens :
   * keywords = while for if else
   * identifier = var1 var2 myFunc
   * comment = #
-  * constant = ' '
+  * constant = ' " ' "
+  * whitespaces = \n \t  
